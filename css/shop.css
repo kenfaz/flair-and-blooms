@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #fdf8fc;
+  color: #333;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* Header */
+header {
+  height: 70%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(to left, #06231d, #0c342c, #076653);
+  justify-content: center;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+header p {
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.header-img {
+  width: 10%;
+}
+
+/* Catalog Section */
+.catalog {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.catalog h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Product Grid */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  padding: 20px;
+}
+
+.product-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.product-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+.product-card p {
+  font-size: 1rem;
+  color: #076653;
+  font-weight: 600;
+}
+
+/* Hover Effect */
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Cart Button */
+.cart-btn {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px 0;
+  background: #076653;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.25s ease, transform 0.2s ease;
+}
+
+.cart-btn:hover {
+  background: #076653;
+  transform: translateY(-2px);
+}
+
+.product-card .description {
+  display: block;
+  font-size: 13px;
+  color: #777;
+  margin-top: 4px;
+  margin-bottom: 8px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  background: linear-gradient(to left, #06231d, #0c342c, #076653);
+  color: #ffffff;
+}
+
+/* Navigation */
+.nav-container {
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  background: linear-gradient(to left, #06231d, #0c342c, #076653);
+}
+
+.nav-bar {
+  height: 100%;
+  display: flex;
+  padding-left: 25px;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 40px;
+  z-index: 1;
+  position: absolute;
+  /* justify-content: space-between; */
+}
+
+.nav-bar a {
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: #ffffff;
+  z-index: 1;
+}
+
+.logo-container {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-container a {
+  font-family: "Great Vibes", cursive;
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+.links-container {
+  display: flex;
+  gap: 40px;
+  padding-right: 25px;
+  object-position: center;
+}
+
+.nav-left-div {
+  display: flex;
+  gap: 20px;
+
+}
+
+.nav-right-div {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
+}
+
+/* Left and Right links */
+.links-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-left-div, .nav-right-div {
+    display: flex;
+    gap: 20px;
+}
+
+/* Hamburger (hidden by default) */
+.hamburger {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .nav-left-div {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        background-color: #fff;
+        display: none; /* hidden by default */
+        padding: 10px 0;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        z-index: 999;
+    }
+
+    .nav-left-div a {
+        padding: 10px 20px;
+        width: 100%;
+        text-align: left;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav-right-div {
+        gap: 15px;
+    }
+}
+
+/* Show menu when active */
+.nav-left-div.active {
+    display: flex;
+}
+
