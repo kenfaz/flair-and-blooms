@@ -64,6 +64,7 @@ section {
   border-radius: 25px;
   font-family: "Lato", Arial, Helvetica, sans-serif;
   font-weight: bolder;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .hero-left-container button:hover {
@@ -71,13 +72,14 @@ section {
   border: 2px solid #ffffff;
   color: #ffffff;
   cursor: pointer;
+  transform: scale(1.2);
 }
 
 .hero-right-container {
   height: 100%;
   display: flex;
   flex: 1;
-  background-image: url(../src/images/natural_beauty.jpg);
+  background-image: url(../src/images/hero_background_image.jpg);
   background-size: cover;
   background-position: center;
 }

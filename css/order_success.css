@@ -1,0 +1,226 @@
+body {
+    font-family: Poppins, sans-serif;
+    background: #fafafa;
+    padding: 20px;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.checkout-container {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+
+.order-summary, .checkout-form {
+    background: #fff;
+    padding: 20px;
+    width: 380px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ddd;
+}
+
+.order-summary h2, .checkout-form h2 {
+    margin-bottom: 15px;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.total {
+    margin-top: 15px;
+    text-align: right;
+}
+
+.checkout-form label {
+    font-weight: 500;
+    margin-top: 10px;
+    display: block;
+}
+
+.checkout-form input,
+.checkout-form textarea,
+.checkout-form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-top: 5px;
+}
+
+.place-order-btn {
+    margin-top: 15px;
+    width: 100%;
+    background: #e85a70;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.place-order-btn:hover {
+    background: #d94a60;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #0c342c, #076653);
+    color: #0c342c;
+    text-align: center;
+    padding: 40px 20px;
+    overflow-x: hidden;
+}
+
+/* Title animation */
+.title {
+    font-size: 2.2rem;
+    animation: fadeDown 0.8s ease forwards;
+    opacity: 0;
+    color: #ffffff; /* nice gradient */
+}
+
+@keyframes fadeDown {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Main container animation */
+.checkout-container {
+    max-width: 550px;
+    margin: 20px auto;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.3);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    animation: slideUp 0.9s ease forwards;
+    opacity: 0;
+}
+
+@keyframes slideUp {
+    0% { opacity: 0; transform: translateY(40px) scale(0.95); }
+    100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+/* Order summary items */
+.order-summary h2 {
+    margin-bottom: 10px;
+    font-size: 1.6rem;
+    color: #ff6a6a; /* nice gradient */
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    background: rgba(255,255,255,0.1);
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Total text */
+.total {
+    font-size: 1.4rem;
+    margin-top: 15px;
+    color: #0c342c;
+}
+
+/* Button styling */
+.place-order-btn {
+    display: inline-block;
+    background: #32d17d;
+    color: #063a32;
+    padding: 12px 25px;
+    border-radius: 12px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.place-order-btn:hover {
+    background: #3ff28d;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+}
+
+/* Animated Checkmark */
+.success-check {
+    font-size: 4.5rem;
+    color: #32d17d;
+    animation: pop 0.7s ease forwards;
+    opacity: 0;
+}
+
+@keyframes pop {
+    0% { transform: scale(0.4); opacity: 0; }
+    60% { transform: scale(1.2); opacity: 1; }
+    100% { transform: scale(1); }
+}
+
+/* CONFETTI EFFECT */
+.confetti {
+    position: fixed;
+    width: 8px;
+    height: 14px;
+    background: white;
+    top: -10px;
+    left: 50%;
+    opacity: 0.8;
+    animation: fall 3s linear forwards;
+    border-radius: 3px;
+}
+
+@keyframes fall {
+    0% { transform: translateX(0) rotate(0deg); }
+    100% { transform: translateX(calc(-50vw + (100vw * random()))) translateY(100vh) rotate(360deg); }
+}
+
+/* Container for the button */
+.continue-container {
+    text-align: center;
+    margin-top: 30px;
+    animation: fadeInUp 1s ease;
+}
+
+/* Button style */
+.continue-btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background: linear-gradient(135deg, #ff6a6a, #ffb347); /* nice gradient */
+    color: white;
+    border-radius: 25px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s ease;
+    font-size: 18px;
+    box-shadow: 0 6px 12px rgba(255, 92, 141, 0.3);
+}
+
+/* Hover effect */
+.continue-btn:hover {
+    background: linear-gradient(90deg, #ff6a6a, #ffb347); /* nice gradient */
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 16px rgba(255, 43, 114, 0.4);
+}
+
+/* Entrance animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -95,17 +95,18 @@ header p {
   width: 100%;
   margin-top: 10px;
   padding: 10px 0;
-  background: #076653;
   border: none;
-  border-radius: 8px;
-  color: white;
+  border-radius: 25px;
+  background: #076653;
+  color: #ffffff;
   font-weight: 600;
   cursor: pointer;
   transition: background 0.25s ease, transform 0.2s ease;
 }
 
 .cart-btn:hover {
-  background: #076653;
+  /* color: #0c342c; */
+  background: linear-gradient(135deg, #ff6a6a, #ffb347); /* nice gradient */
   transform: translateY(-2px);
 }
 
@@ -125,6 +126,76 @@ footer {
   background: linear-gradient(to left, #06231d, #0c342c, #076653);
   color: #ffffff;
 }
+
+.cart-popup {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 16px;
+  padding: 12px 18px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  border: 1px solid rgba(255,255,255,0.3);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  opacity: 0;
+  transform: translateY(25px) scale(0.95);
+  transition: all 0.35s ease;
+  pointer-events: none;
+  z-index: 2000;
+  max-width: 290px;
+}
+
+.cart-popup.show {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.cart-popup-content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.cart-popup i {
+  font-size: 1.5rem;
+  color: #32d17d;
+  background: #ffffff33;
+  padding: 10px;
+  border-radius: 50%;
+  backdrop-filter: blur(4px);
+}
+
+.cart-popup-text {
+  display: flex;
+  flex-direction: column;
+}
+
+#cart-popup-title {
+  font-size: 1.1rem;
+  color: #0c342c;
+}
+
+#cart-popup-message {
+  font-size: 0.9rem;
+  color: #0c342c;
+  margin: 2px 0 0;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .cart-popup {
+    right: 12px;
+    left: 12px;
+    bottom: 15px;
+    max-width: none;
+  }
+}
+
+
 
 /* Navigation bar */
 .nav-bar {

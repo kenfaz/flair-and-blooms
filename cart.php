@@ -120,7 +120,7 @@ $conn->close();
 
         <?php endif; ?>
 
-        <a href="shop.html" class="continue">Continue Shopping</a>
+        <a href="shop.php" class="continue">Continue Shopping</a>
     </div>
 
     <script src="scripts/cart.js">

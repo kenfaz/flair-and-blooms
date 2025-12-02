@@ -60,43 +60,49 @@ $conn->close();
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<title>Order Success | Flair & Blooms</title>
-<link rel="stylesheet" href="css/checkout.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="icon" href="src/icons/logo.png">
+    <meta charset="UTF-8">
+    <title>Order Success | Flair & Blooms</title>
+    <link rel="stylesheet" href="css/checkout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="src/icons/logo.png">
 </head>
+
 <body>
 
-<h1 class="title">Thank You for Your Order!</h1>
+    <!-- <div id="confetti-container"></div>
+    <div class="success-check"><i class="fa-solid fa-circle-check"></i></div> -->
 
-<div class="checkout-container">
+    <h1 class="title">Thank You for Your Order!</h1>
 
-    <div class="order-summary">
-        <h2>Order #<?php echo $order_id; ?></h2>
-        <p><strong>Name:</strong> <?php echo htmlspecialchars($order['fullname']); ?></p>
-        <p><strong>Address:</strong> <?php echo htmlspecialchars($order['address']); ?></p>
-        <p><strong>Payment Method:</strong> <?php echo htmlspecialchars($order['payment_method']); ?></p>
-        <p><strong>Order Date:</strong> <?php echo $order['order_date']; ?></p>
+    <div class="checkout-container">
 
-        <h3>Items:</h3>
-        <?php foreach ($order_items as $item): ?>
-            <div class="summary-item">
-                <span><?php echo $item['product_name']; ?> (x<?php echo $item['quantity']; ?>)</span>
-                <span>₱<?php echo number_format($item['price_each'] * $item['quantity'], 2); ?></span>
+        <div class="order-summary">
+            <h2>Order #<?php echo $order_id; ?></h2>
+            <p><strong>Name:</strong> <?php echo htmlspecialchars($order['fullname']); ?></p>
+            <p><strong>Address:</strong> <?php echo htmlspecialchars($order['address']); ?></p>
+            <p><strong>Payment Method:</strong> <?php echo htmlspecialchars($order['payment_method']); ?></p>
+            <p><strong>Order Date:</strong> <?php echo $order['order_date']; ?></p>
+
+            <h3>Items:</h3>
+            <?php foreach ($order_items as $item): ?>
+                <div class="summary-item">
+                    <span><?php echo $item['product_name']; ?> (x<?php echo $item['quantity']; ?>)</span>
+                    <span>₱<?php echo number_format($item['price_each'] * $item['quantity'], 2); ?></span>
+                </div>
+            <?php endforeach; ?>
+
+            <h3 class="total">Total Paid: ₱<?php echo number_format($total, 2); ?></h3>
+            <div class="continue-container">
+                <a href="shop.php" class="continue-btn">Continue Shopping</a>
             </div>
-        <?php endforeach; ?>
+        </div>
 
-        <h3 class="total">Total Paid: ₱<?php echo number_format($total, 2); ?></h3>
     </div>
 
-    <div style="margin-top: 20px;">
-        <a href="shop.php" class="place-order-btn" style="text-decoration:none;">Continue Shopping</a>
-    </div>
-
-</div>
-
+    <script href="scripts/order_success.js"></script>
 </body>
+
 </html>
