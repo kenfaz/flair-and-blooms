@@ -83,7 +83,7 @@
 
       <!-- Product 4 -->
       <div class="product-card">
-        <img src="src/images/rose.jpg" alt="Lavender" />
+        <img src="src/images/lavander.jpg" alt="Lavender" />
         <h3>Lavender Bundle</h3>
         <small class="description">Calming fragrance with soothing beauty.</small>
         <p>₱299</p>
@@ -92,7 +92,7 @@
 
       <!-- Product 5 -->
       <div class="product-card">
-        <img src="src/images/purple_tulips.jpg" alt="White Roses" />
+        <img src="src/images/white_rose.jpg" alt="White Roses" />
         <h3>White Roses</h3>
         <small class="description">Symbol of purity, grace, and new beginnings.</small>
         <p>₱450</p>
@@ -101,49 +101,13 @@
 
       <!-- Product 6 -->
       <div class="product-card">
-        <img src="src/images/rose.jpg" alt="Peonies" />
+        <img src="src/images/peonies.jpg" alt="Peonies" />
         <h3>Pink Peonies</h3>
         <small class="description">Soft, delicate petals with romantic charm.</small>
         <p>₱520</p>
         <button class="cart-btn" data-product-id="6">Add to Cart</button>
       </div>
 
-      <!-- Product 7 -->
-      <div class="product-card">
-        <img src="src/images/rose.jpg" alt="Red Roses" />
-        <h3>Red Roses Bouquet</h3>
-        <small class="description">Classic symbol of love and admiration.</small>
-        <p>₱499</p>
-        <button class="cart-btn" data-product-id="7">Add to Cart</button>
-      </div>
-
-      <!-- Product 8 -->
-      <div class="product-card">
-        <img src="src/images/purple_tulips.jpg" alt="Tulips" />
-        <h3>Purple Tulips</h3>
-        <small class="description">Elegant blooms representing royalty.</small>
-        <p>₱399</p>
-        <button class="cart-btn" data-product-id="8">Add to Cart</button>
-      </div>
-
-      <!-- Product 9 -->
-      <div class="product-card">
-        <img src="src/images/sunflower.jpg" alt="Sunflowers" />
-        <h3>Sunflower Stem</h3>
-        <small class="description">Bright and cheerful, perfect for any day.</small>
-        <p>₱150</p>
-        <button class="cart-btn" data-product-id="9">Add to Cart</button>
-      </div>
-
-      <!-- Product 10 -->
-      <div class="product-card">
-        <img src="src/images/rose.jpg" alt="Lavender" />
-        <h3>Lavender Bundle</h3>
-        <small class="description">Calming fragrance with soothing beauty.</small>
-        <p>₱299</p>
-        <button class="cart-btn" data-product-id="10">Add to Cart</button>
-      </div>
-    </div>
   </section>
 
   <!-- Footer -->

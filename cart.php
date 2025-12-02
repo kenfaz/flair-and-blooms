@@ -46,6 +46,7 @@ $conn->close();
     <meta charset="UTF-8">
     <title>Your Cart | Flair & Blooms</title>
     <link rel="stylesheet" href="css/cart.css">
+    <link rel="icon" href="src/icons/logo.png">
     <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />

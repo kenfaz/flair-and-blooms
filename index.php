@@ -39,6 +39,7 @@
         <div class="nav-right-div">
           <a href="cart.php"><i class="fa-solid fa-basket-shopping"></i></a>
           <a href="profile.php"><i class="fa-solid fa-user"></i></a>
+          <a href="transaction_history.php"><i class="fa-solid fa-book"></i></a>
           <a href="login.php"><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
         </div>
       </div>

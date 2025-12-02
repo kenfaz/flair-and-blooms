@@ -1,5 +1,5 @@
 <?php
-include 'database.php'; // DB connection
+include 'php_functions/database.php'; // DB connection
 
 $success = "";
 $error = "";

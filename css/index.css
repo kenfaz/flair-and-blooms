@@ -77,7 +77,7 @@ section {
   height: 100%;
   display: flex;
   flex: 1;
-  background-image: url(src/images/natural_beauty.jpg);
+  background-image: url(../src/images/natural_beauty.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -311,7 +311,7 @@ p {
 .about-right-container {
   display: flex;
   flex: 4;
-  background-image: url("src/images/about_image.jpg");
+  background-image: url("../src/images/about_image.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -339,7 +339,7 @@ p {
   height: 100%;
   display: flex;
   flex: 6;
-  background-image: url("src/images/flowers_background.jpg");
+  background-image: url("../src/images/flowers_background.jpg");
   background-size: cover;
 }
 
