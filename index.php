@@ -222,9 +222,9 @@
             life’s beautiful moments with flowers that speak from the heart.
           </p>
         </div>
-        <div class="about-left-button-container">
-          <button>Learn More</button>
-        </div>
+        <!-- <div class="about-left-button-container">
+          <a href="index.php#about-section"><button>Learn More</button></a>
+        </div> -->
       </div>
       <div class="about-right-container"></div>
     </div>
