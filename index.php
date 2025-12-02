@@ -22,29 +22,29 @@
 </head>
 
 <body>
-  <div class="nav-container">
-    <nav class="nav-bar">
-      <div class="logo-container">
-        <a href="#hero-section">Flair & Blooms</a>
-      </div>
+    <div class="nav-container">
+        <nav class="nav-bar">
+            <div class="logo-container">
+                <a href="#hero-section">Flair & Blooms</a>
+            </div>
 
-      <div class="links-container" id="links-container">
-        <div class="nav-left-div">
-          <a href="index.php#flowers-section">Flowers</a>
-          <a href="index.php#customer-review-section">Reviews</a>
-          <a href="index.php#about-section">About</a>
-          <a href="index.php#contact-us-section">Contact Us</a>
-          <a href="shop.php">Shopping</a>
-        </div>
-        <div class="nav-right-div">
-          <a href="cart.php"><i class="fa-solid fa-basket-shopping"></i></a>
-          <a href="profile.php"><i class="fa-solid fa-user"></i></a>
-          <a href="transaction_history.php"><i class="fa-solid fa-book"></i></a>
-          <a href="login.php"><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
-        </div>
-      </div>
-    </nav>
-  </div>
+            <div class="links-container" id="links-container">
+                <div class="nav-left-div">
+                    <a href="index.php#flowers-section">Flowers</a>
+                    <a href="index.php#customer-review-section">Reviews</a>
+                    <a href="index.php#about-section">About</a>
+                    <a href="index.php#contact-us-section">Contact Us</a>
+                    <a href="shop.php">Shopping</a>
+                </div>
+                <div class="nav-right-div">
+                    <a href="cart.php"><i class="fa-solid fa-basket-shopping"></i></a>
+                    <a href="profile.php"><i class="fa-solid fa-user"></i></a>
+                    <a href="transaction_history.php"><i class="fa-solid fa-book"></i></a>
+                    <a href="login.php"><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+                </div>
+            </div>
+        </nav>
+    </div>
 
   <!-- Hero Page -->
   <section class="hero-section" id="hero-section">
@@ -260,7 +260,7 @@
       </div>
     </div>
   </section>
-  <script src="index.js"></script>
+  <script src="scripts/index.js"></script>
 </body>
 <footer></footer>
 

@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+  /* background: linear-gradient(to left, #06231d, #0c342c, #076653); */
+}
+
+.transactions-container {
+  max-width: 800px;
+  margin: auto;
+  padding-top: 100px;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f8f8f8;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+a.view-btn {
+  background-color: #4caf50;
+  color: white;
+  padding: 5px 10px;
+  text-decoration: none;
+  border-radius: 5px;
+
+}
+
+/* Navigation container */
+.nav-container {
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background: linear-gradient(to left, #06231d, #0c342c, #076653);
+  z-index: 1000;
+}
+
+/* Navigation bar */
+.nav-bar {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+
+/* General link styles */
+.nav-bar a {
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: #ffffff;
+}
+
+/* Main links container */
+.links-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+/* Logo stays on one line */
+.logo-container a {
+  font-family: "Great Vibes", cursive;
+  font-size: 2rem;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+/* Prevent logo from shrinking */
+.logo-container {
+  flex-shrink: 0;
+}
+
+/* Left and right link groups */
+.nav-left-div, .nav-right-div {
+  display: flex;
+  gap: 20px;
+}
+
+/* Hamburger icon (hidden by default) */
+.hamburger {
+  display: none;
+  font-size: 1.7rem;
+  cursor: pointer;
+  color: white;
+}
+
+/* -------------------------------------
+   MOBILE RESPONSIVE STYLES
+-------------------------------------- */
+@media (max-width: 768px) {
+
+  /* Hide left-nav links on mobile */
+  .nav-left-div {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    background: #06231d;
+    display: none;
+    padding: 15px 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+
+  /* Mobile dropdown link style */
+  .nav-left-div a {
+    padding: 12px 20px;
+    width: 100%;
+    text-align: left;
+  }
+
+  /* Show hamburger icon */
+  .hamburger {
+    display: block;
+  }
+
+  /* Adjust spacing */
+  .nav-right-div {
+    gap: 15px;
+  }
+
+  /* Keep logo from breaking */
+  .nav-bar {
+    padding: 0 15px;
+  }
+}
+
+/* Show menu when active */
+.nav-left-div.active {
+  display: flex;
+}
